@@ -23,7 +23,6 @@ Feature: Roman Numerals Converter
     When I convert 4 to Roman numerals
     Then the result should be "IV"
 
-  @wip
   Scenario: Convert 5 to Roman numerals
     Given I have a Roman numeral converter
     When I convert 5 to Roman numerals
