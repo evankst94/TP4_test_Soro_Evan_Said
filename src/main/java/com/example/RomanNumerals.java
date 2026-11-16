@@ -6,6 +6,9 @@ public class RomanNumerals {
         if (number == 4) {
             return "IV";
         }
+        if (number == 5) {
+            return "V";
+        }
         return "I".repeat(number);
     }
 }
