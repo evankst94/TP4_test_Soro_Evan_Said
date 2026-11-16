@@ -21,11 +21,9 @@
 
 ## 👥 Équipe
 
-| Membre | Rôle principal |
-|:--|:--|
-| **Evan KESTANE** | Étapes 🔴 RED, BDD & Cucumber |
-| **Katchinninsongui SORO** | Développement & revue |
-| **Said KONATE** | Étapes 🟢 GREEN & 🔵 BLUE |
+- **Evan KESTANE**
+- **Katchinninsongui SORO**
+- **Said KONATE**
 
 ---
 
