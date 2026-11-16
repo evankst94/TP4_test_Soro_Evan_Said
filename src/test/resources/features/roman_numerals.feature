@@ -3,7 +3,6 @@ Feature: Roman Numerals Converter
   I want to convert integers to Roman numerals
   So that numbers can be displayed in the Roman numeral system
 
-  @wip
   Scenario: Convert 1 to Roman numerals
     Given I have a Roman numeral converter
     When I convert 1 to Roman numerals
