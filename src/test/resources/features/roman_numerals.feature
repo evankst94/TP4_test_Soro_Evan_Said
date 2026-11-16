@@ -28,7 +28,6 @@ Feature: Roman Numerals Converter
     When I convert 5 to Roman numerals
     Then the result should be "V"
 
-  @wip
   Scenario: Convert 9 to Roman numerals
     Given I have a Roman numeral converter
     When I convert 9 to Roman numerals
