@@ -2,6 +2,7 @@ package com.example;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -10,13 +11,9 @@ public class PrimeCheckerTest {
     private final PrimeChecker primeChecker = new PrimeChecker();
 
     @ParameterizedTest
-
     @ValueSource(ints = {0, 1})
-
     public void testNumbersLessThan2AreNotPrime(int number) {
-
         assertFalse(primeChecker.isPrime(number), number + " should not be considered a prime number");
-
     }
 
     @ParameterizedTest
