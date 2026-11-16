@@ -17,4 +17,9 @@ public class FizzBuzzTest {
     public void test2Returns2() {
         assertEquals("2", fizzBuzz.convert(2));
     }
+
+    @Test
+    public void test3ReturnsFizz() {
+        assertEquals("Fizz", fizzBuzz.convert(3));
+    }
 }
