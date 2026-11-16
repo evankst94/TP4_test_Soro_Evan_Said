@@ -18,7 +18,6 @@ Feature: Roman Numerals Converter
     When I convert 3 to Roman numerals
     Then the result should be "III"
 
-  @wip
   Scenario: Convert 4 to Roman numerals
     Given I have a Roman numeral converter
     When I convert 4 to Roman numerals
