@@ -22,4 +22,9 @@ public class FizzBuzzTest {
     public void test3ReturnsFizz() {
         assertEquals("Fizz", fizzBuzz.convert(3));
     }
+
+    @Test
+    public void test5ReturnsBuzz() {
+        assertEquals("Buzz", fizzBuzz.convert(5));
+    }
 }
