@@ -33,7 +33,6 @@ Feature: Roman Numerals Converter
     When I convert 9 to Roman numerals
     Then the result should be "IX"
 
-  @wip
   Scenario: Convert 10 to Roman numerals
     Given I have a Roman numeral converter
     When I convert 10 to Roman numerals
