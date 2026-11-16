@@ -26,7 +26,7 @@ public class PrimeCheckerTest {
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {4})
+    @ValueSource(ints = {4, 9})
     public void testCompositeNumbersAreNotPrime(int number) {
         assertFalse(primeChecker.isPrime(number), number + " should not be considered a prime number");
     }
