@@ -8,7 +8,6 @@ Feature: Roman Numerals Converter
     When I convert 1 to Roman numerals
     Then the result should be "I"
 
-  @wip
   Scenario: Convert 2 to Roman numerals
     Given I have a Roman numeral converter
     When I convert 2 to Roman numerals
