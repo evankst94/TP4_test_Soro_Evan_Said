@@ -2,19 +2,18 @@ package com.example;
 
 public class RomanNumerals {
 
+    private static final int[] VALUES = {10, 9, 5, 4, 1};
+    private static final String[] SYMBOLS = {"X", "IX", "V", "IV", "I"};
+
     public String toRoman(int number) {
-        if (number == 4) {
-            return "IV";
+        StringBuilder roman = new StringBuilder();
+        int remaining = number;
+        for (int i = 0; i < VALUES.length; i++) {
+            while (remaining >= VALUES[i]) {
+                roman.append(SYMBOLS[i]);
+                remaining -= VALUES[i];
+            }
         }
-        if (number == 5) {
-            return "V";
-        }
-        if (number == 9) {
-            return "IX";
-        }
-        if (number == 10) {
-            return "X";
-        }
-        return "I".repeat(number);
+        return roman.toString();
     }
 }
