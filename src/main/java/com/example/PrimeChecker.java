@@ -9,6 +9,11 @@ public class PrimeChecker {
         if (number > 2 && number % 2 == 0) {
             return false;
         }
+        for (int divisor = 2; divisor < number; divisor++) {
+            if (number % divisor == 0) {
+                return false;
+            }
+        }
         return true;
     }
 }
