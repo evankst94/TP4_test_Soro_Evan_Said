@@ -13,7 +13,6 @@ Feature: Roman Numerals Converter
     When I convert 2 to Roman numerals
     Then the result should be "II"
 
-  @wip
   Scenario: Convert 3 to Roman numerals
     Given I have a Roman numeral converter
     When I convert 3 to Roman numerals
