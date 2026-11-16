@@ -4,19 +4,21 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 public class PrimeCheckerTest {
 
     private final PrimeChecker primeChecker = new PrimeChecker();
 
-    @Test
-    public void test0IsNotPrime() {
-        assertFalse(primeChecker.isPrime(0), "0 should not be considered a prime number");
-    }
+    @ParameterizedTest
 
-    @Test
-    public void test1IsNotPrime() {
-        assertFalse(primeChecker.isPrime(1), "1 should not be considered a prime number");
+    @ValueSource(ints = {0, 1})
+
+    public void testNumbersLessThan2AreNotPrime(int number) {
+
+        assertFalse(primeChecker.isPrime(number), number + " should not be considered a prime number");
+
     }
 
     @Test
